@@ -77,8 +77,8 @@ namespace AviFav__Converter
                 {
                     try
                     {
-                        var hasAvi = json_avis.Select(a => a.AvatarID == avi).FirstOrDefault();
-                        if (!hasAvi)
+                        var hasAvi = json_avis.Where(a => a.AvatarID == avi).FirstOrDefault();
+                        if (hasAvi is null)
                         {
                             AvatarRES aRES = await client.Avatars.GetSingle(avi);
                             Console.WriteLine(aRES.ToJSON());
@@ -92,6 +92,7 @@ namespace AviFav__Converter
                         // Console.ReadLine();
                     }
                 }
+                json_avis = json_avis.OrderByDescending(a => a.Name).ToList();
                 var json = JsonConvert.SerializeObject(json_avis, Formatting.Indented);
                 Console.WriteLine(json);
                 Console.ReadKey();

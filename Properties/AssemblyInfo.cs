@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AviFav+ Converter")]
+[assembly: AssemblyTitle("AviFavPlus-Converter")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AviFav+ Converter")]
+[assembly: AssemblyProduct("AviFavPlus-Converter")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("cc5a08d8-3aec-4e01-8154-5a2df41d3589")]
+[assembly: Guid("6cda298e-7da7-4126-8e47-68cd618ef239")]
 
 // Version information for an assembly consists of the following four values:
 //
